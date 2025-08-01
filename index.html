@@ -1,7 +1,8 @@
-<html>
+<html lang="fr" dir="ltr">
   <head>
-    <title>Web Speech Synthesis Demo</title>
+    <title>Démo de synthèse vocale pour le Web </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="descrition" content="Démonstration interactive d'intégration d'un synthétiseur voacal à un site Web">
     <style>
       body {
         background-color: #333;
@@ -193,10 +194,10 @@
     </style>
   </head>
   <body class="loading">
-    <h1>Web Speech Synthesis Demo</h1>
+    <h1>Démo de synthèse vocale pour le Web</h1>
     <form>
       <div id="textarea">
-        <textarea id="texttospeak">Call me Ishmael. Some years ago&#8212;never mind how long precisely&#8212;having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.</textarea>
+        <textarea id="texttospeak">Les « chevrons » et l’apostrophe typographique  sont les formes recommandées des guillemets et de l’apostrophe ; elles sont généralement bouclées ou inclinées. Les "guillemets classiques" et l'apostrophe par défaut sont des vestiges des machines à écrire, à l’époque où l’utilisation d’une seule touche pour deux caractères différents permettait d’économiser de l’espace sur le clavier. Malheureusement, on retrouve souvent ces caractères non-désirés sur les sites web en raison d’un mauvais paramétrage par défaut des applications et des systèmes de gestion de contenu. Pourtant, l’utilisation de guillemets et d’apostrophes élégants est plus simple qu’il n’y paraît. La méthode la plus simple consiste à utiliser le jeu de caractères utf-8 sur vos pages web et de taper ou de copier-coller les bons signes de ponctuation.</textarea>
         <div id="textbeingspoken"></div>
       </div>
       <div class="speecharg">
@@ -213,11 +214,11 @@
       </div>
       <div class="bottom">
         <div class="widebutton">
-          <button type="button" onmousedown="speak();"><strong>Speak it</strong></button>
-          <button type="button" id="preachit" onmousedown="stop(); speak();">Interrupt</button>
+          <button type="button" onmousedown="speak();"><strong>Écouter le contenu</strong></button>
+          <button type="button" id="preachit" onmousedown="stop(); speak();">Interrompre</button>
         </div>
-        <button type="button" class="small" aria-label="Pause/Resume" title="Pause/Resume" onmousedown="playpause();"><img src="play_pause.svg"></button>
-        <button type="button" class="small" aria-label="Cancel" title="Cancel" onmousedown="stop();"><img src="stop.svg"></button>
+        <button type="button" class="small" aria-label="Pause/Reprendre" title="Pause/Resume" onmousedown="playpause();"><img src="play_pause.svg"></button>
+        <button type="button" class="small" aria-label="Annuler" title="Cancel" onmousedown="stop();"><img src="stop.svg"></button>
       </div>
       <div class="bottom">
       </div>
